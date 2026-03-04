@@ -74,7 +74,8 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000"));
+        configuration.setAllowedOrigins(List.of("https://www.webnote.uz","https://webnote.uz",
+                       "https://personal-blog-nextjs-rho.vercel.app"));
         configuration.setAllowedMethods(
             List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")
         );
